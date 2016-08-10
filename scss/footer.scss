@@ -7,7 +7,7 @@ footer {
         display: none;
 
         @include breakpoint(medium) {
-            display: unset;
+            display: block;
         }
     }
 }
@@ -16,6 +16,15 @@ footer {
     h2 {
         @include grid-column(12);
         text-align: center;
-    }
-}
 
+        @include breakpoint(medium) {
+            @include grid-column(8);
+        }
+    }
+
+    p {
+        @include breakpoint(medium) {
+            @include grid-column(2);
+        }
+    }   
+}
