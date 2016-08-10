@@ -28,3 +28,39 @@ footer {
         }
     }   
 }
+
+#footer2 {
+    section {
+        @include grid-column(12);
+        text-align: center;
+
+        @include breakpoint(medium) {
+            @include grid-column(4);
+        }
+    }
+
+    .flinks {
+        @include breakpoint(medium) {
+            @include grid-column(2);
+        }
+    }
+
+    #femail {
+        @include breakpoint(medium) {
+            @include grid-column(4);
+        }
+    }
+}
+
+#footer4 {
+    div {
+        @include breakpoint(medium) {
+            @include grid-column(4);
+        }
+
+        p {
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
