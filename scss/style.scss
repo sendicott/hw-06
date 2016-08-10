@@ -1,0 +1,13 @@
+// Import Foundation
+@import '../node_modules/foundation-sites/scss/foundation.scss';
+
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+// Import my other files
+@import 'base';
+@import 'header';
+@import 'content';
+@import 'merchandise';
+@import 'footer';

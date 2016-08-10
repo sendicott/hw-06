@@ -1,0 +1,21 @@
+footer {
+    background-image: url("https://0041b200f62b3b1e2348-1120f113e97866ae33baf6d37d9ffbd6.ssl.cf5.rackcdn.com/images/kraft-bg.jpg");
+    section {
+        @include grid-row();
+    }
+    .littlefootshrink {
+        display: none;
+
+        @include breakpoint(medium) {
+            display: unset;
+        }
+    }
+}
+
+#footer1 {
+    h2 {
+        @include grid-column(12);
+        text-align: center;
+    }
+}
+

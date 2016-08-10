@@ -1,0 +1,23 @@
+#merchheader {
+    @include grid-row();
+
+    div {
+        @include grid-column(12);
+        text-align: center;
+    }
+}
+
+#merch {
+    @include grid-row();
+    // text-align: center;
+
+    figure {
+        margin: 0;
+        @include grid-column(6);
+        border: 1px solid black;
+
+        @include breakpoint(medium) {
+            @include grid-column(3);
+        }
+    }
+}

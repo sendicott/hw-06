@@ -1,0 +1,7 @@
+.big-appear {
+    display: none;
+    // Once the screen gets 'medium', apply these styles
+    @include breakpoint(medium) {
+        display: block;
+    }
+}
