@@ -3,13 +3,6 @@ footer {
     section {
         @include grid-row();
     }
-    .littlefootshrink {
-        display: none;
-
-        @include breakpoint(medium) {
-            display: block;
-        }
-    }
 }
 
 #footer1 {
@@ -23,7 +16,10 @@ footer {
     }
 
     p {
+        display: none;
+
         @include breakpoint(medium) {
+            display: block;
             @include grid-column(2);
         }
     }   
@@ -40,12 +36,16 @@ footer {
     }
 
     .flinks {
+        display: none;
+
         @include breakpoint(medium) {
             @include grid-column(2);
         }
     }
 
     #femail {
+        display: none;
+        
         @include breakpoint(medium) {
             @include grid-column(4);
         }
